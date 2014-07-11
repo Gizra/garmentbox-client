@@ -1,0 +1,27 @@
+<breadcrumbs hierarchy="itemVariant.hierarchy"></breadcrumbs>
+
+
+<div class="row banner">
+  <div class="col-md-1 col-sm-1 col-xs-2">
+    <image-by-size size="thumb" background="background" images="itemVariant.images"></image-by-size>
+  </div>
+
+  <div class="col-md-7 col-sm-7 col-xs-10">
+    <h1><span editable-text="itemVariant.title" e-required e-placeholder="Enter item variant name" onbeforesave="validateItemVariant($data)" onaftersave="updateItemVariant()">{{ itemVariant.title }}</span></h1>
+  </div>
+
+  <div class="col-md-4 col-sm-4 col-xs-6">
+    <div class="label-lowercase">
+      Status
+    </div>
+    <div>
+      {{ itemVariant.status }}
+    </div>
+  </div>
+</div>
+
+<div>
+  <item-variant-prices prices="itemVariant.prices"></item-variant-prices>
+</div>
+
+

@@ -2,20 +2,22 @@
 
 /**
  * @ngdoc overview
- * @name angularProjectsApp
+ * @name garmentboxClientApp
  * @description
- * # angularProjectsApp
+ * # garmentboxClientApp
  *
  * Main module of the application.
  */
 angular
-  .module('angularProjectsApp', [
+  .module('garmentboxClientApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'xeditable',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -23,9 +25,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+      .when('/item-variant/:id', {
+        templateUrl: 'views/item-variant.html',
+        controller: 'ItemVariantCtrl'
       })
       .otherwise({
         redirectTo: '/'
