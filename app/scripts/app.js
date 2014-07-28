@@ -15,9 +15,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'xeditable',
-    'ui.bootstrap'
+    'ngTouch'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -25,9 +23,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/item-variant/:id', {
-        templateUrl: 'views/item-variant.html',
-        controller: 'ItemVariantCtrl'
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'

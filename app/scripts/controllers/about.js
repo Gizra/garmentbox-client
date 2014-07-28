@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name garmentboxClientApp.controller:MainCtrl
+ * @name garmentboxClientApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the garmentboxClientApp
  */
 angular.module('garmentboxClientApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
